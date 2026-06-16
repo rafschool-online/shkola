@@ -4,32 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="yandex-verification" content="799b4a4822ac61d9" />
-  <title>Математика 1–11 классы</title>
+  <title>РАФСКУЛ — Онлайн-школа математики</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
     }
     body {
       line-height: 1.6;
       color: #333;
-      background-color: #f4f4f9;
+      background-color: #f8fafc;
     }
     header {
-      background: linear-gradient(135deg, #2563eb, #1e40af);
+      background: linear-gradient(135deg, #1e40af, #2563eb);
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px;
     }
     header h1 {
-      font-size: 48px;
+      font-size: 52px;
+      font-weight: 800;
       margin-bottom: 15px;
+      letter-spacing: 1px;
     }
     header p {
-      font-size: 20px;
-      margin-bottom: 30px;
+      font-size: 22px;
+      margin-bottom: 35px;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      color: #1e3a8a;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1max));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    .course-card {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      border-top: 5px solid #2563eb;
+      transition: transform 0.2s;
+    }
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+    .course-card h3 {
+      font-size: 22px;
+      color: #1e293b;
+      margin-bottom: 15px;
+    }
+    .course-card p {
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #1d4ed8;
+    }
+    .btn-header {
+      background: white;
+      color: #2563eb;
+      font-size: 18px;
+      padding: 14px 32px;
+    }
+    .btn-header:hover {
+      background: #f1f5f9;
+      color: #1d4ed8;
+    }
+    footer {
+      background: #1e293b;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -38,7 +111,44 @@
   <header>
     <h1>РАФСКУЛ</h1>
     <p>Курсы по подготовке к математике с 1 по 11 классы для любого уровня</p>
+    <a href="#contacts" class="btn btn-header">Записаться на уроки</a>
   </header>
 
+  <div class="container">
+    <h2 class="section-title">Направления обучения</h2>
+    
+    <div class="courses-grid">
+      <div class="course-card">
+        <h3>Начальная школа (1–4 классы)</h3>
+        <p>Поможем разобраться с базовой математикой, подтянуть оценки, убрать страх перед предметом и развить логическое мышление у ребенка.</p>
+        <a href="#contacts" class="btn">Подробнее</a>
+      </div>
+
+      <div class="course-card">
+        <h3>Средняя школа (5–8 классы)</h3>
+        <p>Устранение пробелов в геометрии и алгебре. Подготовка к ВПР. Закладываем прочный фундамент перед серьезными экзаменами.</p>
+        <a href="#contacts" class="btn">Подробнее</a>
+      </div>
+
+      <div class="course-card">
+        <h3>Подготовка к ОГЭ и ЕГЭ (9–11 классы)</h3>
+        <p>Интенсивные разборы всех типов задач, включая сложную вторую часть и параметры. Пошаговый план выхода на максимальный балл.</p>
+        <a href="#contacts" class="btn">Подробнее</a>
+      </div>
+    </div>
+
+    <h2 id="contacts" class="section-title" style="margin-top: 40px;">Контакты для записи</h2>
+    <div style="text-align: center; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+      <p style="font-size: 20px; margin-bottom: 15px; font-weight: 600;">Преподаватель: Фатима Сулеймановна</p>
+      <p style="color: #64748b; margin-bottom: 25px;">Запишитесь на первое бесплатное занятие-тестирование
+        ямо сейчас!</p>
+      <a href="https://t.me/ваше_имя" target="_blank" class="btn" style="background: #0088cc;">Написать в Telegram</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 РАФСКУЛ. Все права защищены. Подготовка к ОГЭ и ЕГЭ по профильной математике.</p>
+  </footer>
+
 </body>
-</html>
+</html> пр
